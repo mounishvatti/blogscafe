@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import conf from './conf/conf'
 import { useDispatch } from 'react-redux'
 import authService from './appwrite/auth'
 import { login, logout } from './store/authSlice'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import { Header, Footer } from './components'
+import {Outlet} from 'react-router-dom'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -28,6 +25,9 @@ function App() {
   return !loading ? (
     <>
     <Header />
+    <main>
+      <Outlet />
+    </main>
     <Footer />
     </>
   ) : null
