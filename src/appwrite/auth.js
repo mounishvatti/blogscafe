@@ -42,25 +42,9 @@ export class AuthService{
         }
     }
 
-    async verifyEmail(){
+    async getCurrentUser(){
         try{
-            return await this.account.getVerification("#");
-        } catch(error){
-            throw error;
-        }
-    }
-
-    async forgetPassword(){
-        try{
-            return await this.account.createRecovery(email, forgetpwdurl);
-        } catch(error){
-            throw error;
-        }
-    }
-
-    async resetPassword(){
-        try{
-            return await this.account.updateRecovery(email, newpassword, forgetpwdurl);
+            return await this.account.get();
         } catch(error){
             throw error;
         }
