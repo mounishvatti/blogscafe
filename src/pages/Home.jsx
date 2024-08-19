@@ -29,12 +29,13 @@ function Home() {
         <Landing2 />
       </>
     );
+  } else if (posts.length > 0 && authStatus === true) {
+    return (
+      <>
+        <Landing3 />
+      </>
+    );
   }
-  return (
-    <>
-      <Landing3 />
-    </>
-  );
 }
 
 export default Home;

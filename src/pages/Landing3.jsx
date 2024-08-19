@@ -26,8 +26,8 @@ function Landing3() {
             <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
               <img
                 className="aspect-[3/2] object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
-                src="https://c7edd99d51e0e6080d067050a03dc2c3.cdn.bubble.io/f1688736280400x613270418449146200/Illustration2.svg"
-                alt=""
+                src="https://framerusercontent.com/images/rDZxsULbjfu26b3CAd1izoZCQes.png"
+                alt="img"
               />
             </div>
           </div>
