@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { Provider } from "react-redux";
 import Home from "./pages/Home.jsx";
+import Landing from "./pages/Landing.jsx";
 import Signup from "./pages/Signup";
 import store from "./store/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

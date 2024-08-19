@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, PostCard } from "../components";
 import appwriteService from "../appwrite/config";
+import { useSelector } from "react-redux";
+import NoPosts from "./NoPosts";
 
 function AllPosts() {
+  const authStatus = useSelector((state) => state.auth.status);
   const [posts, setPosts] = useState([]);
   useEffect(() => {}, []);
   appwriteService.getPosts([]).then((posts) => {
@@ -10,6 +13,11 @@ function AllPosts() {
       setPosts(posts.documents);
     }
   });
+  if (posts.length === 0 && authStatus === true) {
+    return (
+      <NoPosts />
+    );
+  }
   return (
     <div className="w-full py-8">
       <Container>
