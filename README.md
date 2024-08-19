@@ -43,7 +43,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/blogscafe.git
+   git clone https://github.com/mounishvatti/blogscafe.git
    cd blogscafe
    ```
 
