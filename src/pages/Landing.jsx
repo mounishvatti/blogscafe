@@ -14,7 +14,7 @@ function Landing() {
                 Please login to view the posts
               </h1>
               <p className="mt-8 text-lg text-gray-700">
-                Go throw blogs related to your interests and discover new
+                Go through blogs related to your interests and discover new
                 content. Share your thoughts and ideas with the community.
               </p>
               <button className="mt-8 flex justify-items-start bg-black text-white font-semibold text-md px-4 py-2 rounded-md w-max"
